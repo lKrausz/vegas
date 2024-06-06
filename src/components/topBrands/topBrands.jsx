@@ -142,7 +142,7 @@ function TopBrands({
   return (
     <div>
       {data.length > 0 && (
-        <div id="ttsmartblog" className="style2 otherBrands">
+        <div className="style2 topBrands">
           <div className="tt-title d-inline-block float-none w-100 text-center">{t("Summer's Best Casino Bonuses!")}</div>
           <div className="container">
             <div className="smartblog-content row">
@@ -170,12 +170,12 @@ function TopBrands({
           </div>
           {isAllElements ? (
             <a href={`https://topbon.us/${newUrl}L_enchanted-forest_1`} target="_blank">
-              <button class="button-glow">{t("More offers")}</button>
+              <button className="button-glow">{t("More offers")}</button>
             </a>
           ) : (
               <a target="_blank"
               onClick={loadMoreItems}>
-              <button class="button-glow">{t("Show more")}</button>
+              <button className="button-glow">{t("Show more")}</button>
             </a>
           )}
         </div>

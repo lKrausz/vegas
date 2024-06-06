@@ -124,7 +124,7 @@ function OtherBrands({
   return (
     <div>
       {otherData.length > 0 && (
-        <div id="ttsmartblog" className="style2 my-40 my-sm-25">
+        <div className="style2 my-40 my-sm-25 otherBrands">
           <div className="tt-title d-inline-block float-none w-100 text-center">{t("Exclusive Summer Specials – Limited Time Only!")}</div>
           <div className="container">
             <div className="smartblog-content row">
@@ -155,12 +155,12 @@ function OtherBrands({
           </div>
           {isAllElements ? (
             <a href={`https://topbon.us/${newUrl}L_enchanted-forest_2`} target="_blank">
-              <button class="button-glow">{t("More offers")}</button>
+              <button className="button-glow">{t("More offers")}</button>
             </a>
           ) : (
             <a target="_blank"
               onClick={loadMoreItems}>
-              <button class="button-glow">{t("Show more")}</button>
+              <button className="button-glow">{t("Show more")}</button>
             </a>
           )}
         </div>

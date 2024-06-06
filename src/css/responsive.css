@@ -861,9 +861,6 @@
   .card {
     margin: 20px 0 !important;
   }
-  #ttsmartblog .container .smartblog-content .ttblog .item .blog-content-wrap {
-    padding: 35px;
-  }
   .header-wrapper .logo-menu {
     width: 120px;
   }
@@ -880,27 +877,6 @@
   .header-wrapper .mneu-btn-grp .cmn--btn2 {
     font-size: 14px;
     padding: 8px 20px 8px;
-  }
-
-  #ttsmartblog .container .smartblog-content .ttblog .item .blog-content-wrap .blog_inner .blog-title {
-    font-size: 16px !important;
-    padding: 0 0 10px;
-    margin: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    font-weight: 400;
-  }
-  #ttsmartblog .container .smartblog-content .ttblog .item .blog-content-wrap .blog_inner .blog-desc {
-    float: left;
-    width: 100%;
-    font-size: 14px !important;
-    color: #666;
-    min-height: 60px;
-    margin: 0 0 10px;
-  }
-  #ttsmartblog .container .smartblog-content .ttblog .item .blog-content-wrap .blog_inner .read-more a {
-    font-weight: 400;
-    font-size: 16px !important;
   }
 }
 
@@ -1076,31 +1052,6 @@
     font-size: 28px !important;
   }
 
-  #ttsmartblog .container .smartblog-content .ttblog .item .blog-content-wrap {
-    padding: 15px;
-    position: static;
-  }
- 
-  #ttsmartblog .container .smartblog-content .ttblog .item .blog-content-wrap .blog_inner .blog-title {
-    font-size: 20px !important;
-    padding: 0 0 10px;
-    margin: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    font-weight: 400;
-  }
-  #ttsmartblog .container .smartblog-content .ttblog .item .blog-content-wrap .blog_inner .blog-desc {
-    float: left;
-    width: 100%;
-    font-size: 18px !important;
-    color: #666;
-    margin: 0 0 10px;
-  }
-  #ttsmartblog .container .smartblog-content .ttblog .item .blog-content-wrap .blog_inner .read-more a {
-    font-weight: 400;
-    font-size: 18px !important;
-  }
-  
   .footer__bottom {
     padding: 19px 0;
     display: grid;
@@ -1192,27 +1143,6 @@
   .ttblog .item {
     padding: 10px 60px !important;
   }
-
-  #ttsmartblog .container .smartblog-content .ttblog .item .blog-content-wrap .blog_inner .blog-title {
-    font-size: 20px !important;
-    padding: 0 0 10px;
-    margin: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    font-weight: 400;
-  }
-  #ttsmartblog .container .smartblog-content .ttblog .item .blog-content-wrap .blog_inner .blog-desc {
-    float: left;
-    width: 100%;
-    font-size: 18px !important;
-    color: #666;
-    margin: 0 0 10px;
-  }
-  #ttsmartblog .container .smartblog-content .ttblog .item .blog-content-wrap .blog_inner .read-more a {
-    font-weight: 400;
-    font-size: 18px !important;
-  }
-
   .pb-60 {
     padding-bottom: 25px;
   }

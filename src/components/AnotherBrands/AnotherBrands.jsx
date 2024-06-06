@@ -117,8 +117,8 @@ function AnotherBrands({
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-12">
-          <div class="hero-content top-greadient sign-wrap-4">
-            <h1 class="wow fadeInLeft mb-20 sign_word" data-wow-delay=".2s"> {t("Las Vegas Party")}</h1>
+          <div className="hero-content top-greadient sign-wrap-4">
+            <h1 className="wow fadeInLeft mb-20 sign_word" data-wow-delay=".2s"> {t("Las Vegas Party")}</h1>
               <h4 className="wow fadeInUp" data-wow-delay=".4s">
                 {t("Discover top online casino offers, exclusive bonuses, free spins, and more. Try your luck with these sizzling summer deals!")}
               </h4>
@@ -127,7 +127,7 @@ function AnotherBrands({
             {otherData.length > 0 ? (
               otherData.slice(0, 1).map((rowData, index) => (
                 <a key={index} target="_blank" href={rowData["GoBig"] + newUrl + "L_enchanted-forest_random"} className="button-drawing type--A">
-                  <button class="button-glow">{t("TRY YOUR LUCK")}</button>
+                  <button className="button-glow">{t("TRY YOUR LUCK")}</button>
                 </a>
               ))
             ) : (
