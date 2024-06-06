@@ -118,10 +118,12 @@ function AnotherBrands({
         <div className="row align-items-center">
           <div className="col-lg-12">
           <div className="hero-content top-greadient sign-wrap-4">
-            <h1 className="wow fadeInLeft mb-20 sign_word" data-wow-delay=".2s"> {t("Las Vegas Party")}</h1>
-              <h4 className="wow fadeInUp" data-wow-delay=".4s">
+            <h1 className="wow fadeInLeft mb-20 sign_word" data-wow-delay=".2s"> {t("Light your night")}</h1>
+            <div className="hero-description">
+            <h4 className="wow fadeInUp" data-wow-delay=".4s">
                 {t("Discover top online casino offers, exclusive bonuses, free spins, and more. Try your luck with these sizzling summer deals!")}
               </h4>
+            </div>
 
             </div>
             {otherData.length > 0 ? (
