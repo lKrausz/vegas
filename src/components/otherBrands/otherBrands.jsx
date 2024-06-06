@@ -124,7 +124,7 @@ function OtherBrands({
   return (
     <div>
       {otherData.length > 0 && (
-        <div className="style2 my-40 my-sm-25 otherBrands">
+        <div className="my-40 my-sm-25 otherBrands">
           <div className="tt-title d-inline-block float-none w-100 text-center">{t("Exclusive Summer Specials – Limited Time Only!")}</div>
           <div className="container">
             <div className="smartblog-content row">
