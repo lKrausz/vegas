@@ -18,7 +18,7 @@ function TopBrands({
   const { t } = useTranslation();
   const [data, setData] = useState([]);
   const [topData, setTopData] = useState([]);
-  const [step, setStep] = useState(4);
+  const [step, setStep] = useState(3);
   const [isAllElements, setAllElements] = useState(false);
 
   const urlParams = new URLSearchParams(window.location.search);
@@ -42,7 +42,7 @@ function TopBrands({
   }
 
   function loadMoreItems() {
-    setStep(prevIndex => prevIndex + 4);
+    setStep(prevIndex => prevIndex + 3);
   }
 
   console.log("source:", source);
@@ -147,7 +147,7 @@ function TopBrands({
           <div className="container">
             <div className="smartblog-content row">
               {data.map((rowData, index) => (
-                <div className="ttblog  col-xl-3 col-lg-3 col-sm-6">
+                <div className="ttblog  col-xl-4 col-lg-4 col-sm-6">
                     <a className="readmore" href={
                             rowData["GoBig"] +
                             newUrl +

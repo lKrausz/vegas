@@ -3516,10 +3516,7 @@ p {
   justify-content: space-between;
   margin-bottom: 20px;
 }
-.game__items__timing .timing__wrap li:not(:last-child) {
-  border-right: 1px solid #7e6294;
-  padding-right: 25px;
-}
+
 .game__items__timing .timing__wrap li .title {
   color: #7e6294;
   font-size: 16px;
@@ -4629,6 +4626,10 @@ z-index: 1;
   margin-bottom: 8px;
   text-transform: capitalize;
   color: var(--font-color);
+}
+
+.card img {
+  width: 400px;
 }
 
 .card .card-para {
