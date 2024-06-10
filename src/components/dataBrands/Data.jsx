@@ -169,6 +169,7 @@ function ChildComponent() {
         source={source}
         selectedCountry={selectedCountry}
       />
+      <div className="country-select">
       {source === "partner1043" && (
         <div className="select-brand container">
         <Box sx={{ m: 1, minWidth: 300 }}>
@@ -281,6 +282,7 @@ function ChildComponent() {
           </Box>
         </div>
       )}
+      </div>
 
       <TopBrands
         newUrl={newUrl}

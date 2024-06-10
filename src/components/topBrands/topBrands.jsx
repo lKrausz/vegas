@@ -18,7 +18,7 @@ function TopBrands({
   const { t } = useTranslation();
   const [data, setData] = useState([]);
   const [topData, setTopData] = useState([]);
-  const [step, setStep] = useState(3);
+  const [step, setStep] = useState(1);
   const [isAllElements, setAllElements] = useState(false);
 
   const urlParams = new URLSearchParams(window.location.search);
@@ -142,46 +142,133 @@ function TopBrands({
   return (
     <div>
       {data.length > 0 && (
-        <div className="style2 topBrands">
+        <div className="topBrands">
           <div className="tt-title d-inline-block float-none w-100 text-center">{t("Summer's Best Casino Bonuses!")}</div>
           <div className="container">
-            <div className="smartblog-content row">
-              {data.map((rowData, index) => (
-                <div className="ttblog  col-xl-4 col-lg-4 col-sm-6">
-                    <a className="readmore" href={
-                            rowData["GoBig"] +
-                            newUrl +
-                            "L_enchanted-forest_1"
-                          }>
-                  <div className="card">
-                    <div className="imageContainer">
-                      <img src={rowData["LinkImg"]} alt={rowData["LinkImg"]} />
+            {/* <div className="smartblog-content row"> */}
+            {data.map((rowData, index) => (
+              <div>
+
+                <div class="tabs">
+
+                  <input type="radio" name="tabs" id="tabone" checked="checked"/>
+                    <label for="tabone">First Tab</label>
+                    <div class="tab">
+                      <h1>First Tab Content</h1>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
-                    <div className="card-content">
-                      <p className="card-title">{rowData["CasinoBrand"]}</p>
-                      <p className="card-para">{rowData["OurOfferContent"]}</p>
+
+                    <input type="radio" name="tabs" id="tabtwo"/>
+                      <label for="tabtwo">Second Tab</label>
+                      <div class="tab">
+                        <h1>Second Tab Content</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+
+                      <input type="radio" name="tabs" id="tabthree"/>
+                        <label for="tabthree">Third Tab</label>
+                        <div class="tab">
+                          <h1>Third tab content</h1>
+                          <p>hfioezhogehzioghz</p>
+                        </div>
+                      </div>
+
+                      {/* <div className="row">
+                    <div className="ttblog  col-xl-4 col-lg-4 col-sm-6">
+                      <a className="readmore" href={
+                        rowData["GoBig"] +
+                        newUrl +
+                        "L_enchanted-forest_1"
+                      }>
+                        <div className="top-card">
+                          <div className="imageContainer">
+                            <img src={rowData["LinkImg"]} alt={rowData["LinkImg"]} />
+                            <img src="" alt="" />
+                          </div>
+                          <div className="top-card-content">
+                            <p className="top-card-title">{rowData["CasinoBrand"]}</p>
+                            <p className="top-card-para">{rowData["OurOfferContent"]}</p>
+                          </div>
+                        </div>
+                      </a>
                     </div>
-                  </div>
-                  </a>
+                    <div className="ttblog  col-xl-8 col-lg-8 col-sm-6">
+                      <a className="readmore" href={
+                        rowData["GoBig"] +
+                        newUrl +
+                        "L_enchanted-forest_1"
+                      }>
+                        <div className="top-card">
+                          <div className="imageContainer">
+                            <img src={rowData["LinkImg"]} alt={rowData["LinkImg"]} />
+                          </div>
+                          <div className="top-card-content">
+                            <p className="top-card-title">{rowData["CasinoBrand"]}</p>
+                            <p className="top-card-para">{rowData["OurOfferContent"]}</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div> */}
+
+                      {/* <div className="row">
+                    <div className="ttblog  col-xl-8 col-lg-8 col-sm-6">
+                      <a className="readmore" href={
+                        rowData["GoBig"] +
+                        newUrl +
+                        "L_enchanted-forest_1"
+                      }>
+                        <div className="top-card">
+                          <div className="imageContainer">
+                            <img src={rowData["LinkImg"]} alt={rowData["LinkImg"]} />
+                          </div>
+                          <div className="top-card-content">
+                            <p className="top-card-title">{rowData["CasinoBrand"]}</p>
+                            <p className="top-card-para">{rowData["OurOfferContent"]}</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div className="ttblog  col-xl-4 col-lg-4 col-sm-6">
+                      <a className="readmore" href={
+                        rowData["GoBig"] +
+                        newUrl +
+                        "L_enchanted-forest_1"
+                      }>
+                        <div className="top-card">
+                          <div className="imageContainer">
+                            <img src={rowData["LinkImg"]} alt={rowData["LinkImg"]} />
+                          </div>
+                          <div className="top-card-content">
+                            <p className="top-card-title">{rowData["CasinoBrand"]}</p>
+                            <p className="top-card-para">{rowData["OurOfferContent"]}</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div> */}
+                    </div>
+
+                    )
+            )}
+
                 </div>
-              )
-              )}
-            </div>
+                {/* </div> */}
+                {/* {isAllElements ? (
+                  <a href={`https://topbon.us/${newUrl}L_enchanted-forest_1`} target="_blank">
+                    <button className="button-glow">{t("More offers")}</button>
+                  </a>
+                ) : (
+                  <a target="_blank"
+                    onClick={loadMoreItems}>
+                    <button className="button-glow">{t("Show more")}</button>
+                  </a>
+                )} */}
+              </div>
+            )}
           </div>
-          {isAllElements ? (
-            <a href={`https://topbon.us/${newUrl}L_enchanted-forest_1`} target="_blank">
-              <button className="button-glow">{t("More offers")}</button>
-            </a>
-          ) : (
-              <a target="_blank"
-              onClick={loadMoreItems}>
-              <button className="button-glow">{t("Show more")}</button>
-            </a>
-          )}
-        </div>
-      )}
-    </div>
-  );
+          );
 }
 
-export default TopBrands;
+          export default TopBrands;
